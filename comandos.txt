@@ -1,0 +1,20 @@
+# Si no esta creado el entorno virtual
+python3 -m venv venv
+
+# Iniciar el entorno virtual
+source venv/bin/activate
+
+# Si no se ha instalado zmq
+pip install pyzmq
+
+# Inicializar DB
+python db_init.py
+
+# Iniciar Gestor
+python gc.py "*:5555" "*:5560"
+
+# Iniciar Actor (cada máquina sede con su copia DB)
+python actor.py <ip gestor> 5560
+
+# Iniciar PS 
+python ps.py PS1 sample_requests.txt <ip gestor> 5555

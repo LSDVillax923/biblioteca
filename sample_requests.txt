@@ -1,0 +1,10 @@
+devolucion,B0541,user0
+renovacion,B0825,user1
+devolucion,B0937,user2
+renovacion,B0920,user3
+devolucion,B0593,user4
+renovacion,B0617,user5
+devolucion,B0633,user6
+renovacion,B0764,user7
+devolucion,B0939,user8
+renovacion,B0701,user9
