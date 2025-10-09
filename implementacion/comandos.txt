@@ -11,10 +11,12 @@ pip install pyzmq
 python db_init.py
 
 # Iniciar Gestor
-python gc.py "*:5555" "*:5560"
+python gestor.py "*:5555" "*:5560"
 
 # Iniciar Actor (cada máquina sede con su copia DB)
 python actor.py <ip gestor> 5560
 
 # Iniciar PS 
-python ps.py PS1 sample_requests.txt <ip gestor> 5555
+python solicitante.py PS1 sample_requests.txt 172.20.10.2 5555
+
+sqlite3 library.db "SELECT book_code, user_id FROM loans LIMIT 10;"
