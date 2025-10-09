@@ -1,0 +1,22 @@
+cat > .gitignore << 'EOF'
+# Entorno virtual
+implementacion/venv/
+
+# Base de datos local
+implementacion/library.db
+
+# Caches Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local / sistema / IDE
+.DS_Store
+.env
+*.log
+.vscode/
+.idea/
+EOF
+implementacion/venv/
+implementacion/library.db
